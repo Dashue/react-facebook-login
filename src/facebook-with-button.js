@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../styles/facebook.scss';
+import styles from '../styles/facebook.css';
 import FacebookLogin from './facebook';
 
 // https://www.w3.org/TR/html5/disabled-elements.html#disabled-elements
@@ -65,7 +65,7 @@ class ReactFacebookLoginWithButton extends React.Component {
       optionalProps.disabled = true;
     }
     return (
-      <span style={ this.containerStyle(renderProps) }>
+      <span style={this.containerStyle(renderProps)}>
         {isIconString && (
           <link
             rel="stylesheet"
@@ -75,7 +75,7 @@ class ReactFacebookLoginWithButton extends React.Component {
         <this.props.tag
           type={typeButton}
           className={`${cssClass} ${size}`}
-          style={ buttonStyle }
+          style={buttonStyle}
           onClick={onClick}
           {...optionalProps}
         >
